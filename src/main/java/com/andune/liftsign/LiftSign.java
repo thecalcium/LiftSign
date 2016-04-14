@@ -70,8 +70,8 @@ public class LiftSign extends JavaPlugin {
         }
         buildNumber = jarUtil.getBuild();
 
-        if( getConfig().getBoolean("debug", false) )
-            LoggerFactory.getLogUtil().enableDebug("com.andune.liftsign");
+        /* if( getConfig().getBoolean("debug", false) )
+            LoggerFactory.getLogUtil().enableDebug("com.andune.liftsign"); */
 
         // load localized strings for the configured locale
         LocaleConfig localeConfig = new LocaleConfig(getConfig().getString("locale", "en"),
