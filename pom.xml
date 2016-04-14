@@ -16,28 +16,14 @@
         <build.number>${maven.build.timestamp}</build.number>
     </properties>
 
-    <scm>
-        <connection>scm:git:git://github.com/andune/LiftSign.git</connection>
-        <url>https://github.com/andune/LiftSign</url>
-        <developerConnection>scm:git:git@github.com:andune/LiftSign.git</developerConnection>
-    </scm>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>andune-repo-snapshot</id>
-            <name>Andune nexus repository</name>
-            <url>http://andune.com/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <repositories>
         <repository>
             <id>onarandombox</id>
             <url>http://repo.onarandombox.com/content/groups/public</url>
         </repository>
         <repository>
-            <id>bukkit-repo</id>
-            <url>http://repo.bukkit.org/content/groups/public/</url>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
         <repository>
             <id>andune-repo</id>
@@ -48,9 +34,9 @@
     <dependencies>
         <!-- Bukkit -->
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.6.2-R0.1</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.9-R0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- Dependency Injection (guice) -->
@@ -82,12 +68,12 @@
         <dependency>
             <groupId>com.andune.minecraft.commonlib</groupId>
             <artifactId>commonlib</artifactId>
-            <version>0.5</version>
+            <version>0.8.1</version>
         </dependency>
         <dependency>
             <groupId>com.andune.minecraft.commonlib</groupId>
             <artifactId>commonBukkitlib</artifactId>
-            <version>0.5</version>
+            <version>0.8.1</version>
         </dependency>
 
         <!-- Start of Test Dependencies -->
@@ -122,6 +108,11 @@
             <artifactId>easymock</artifactId>
             <version>3.0</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>3.0.0</version>
         </dependency>
         <!-- End of Test Dependencies -->
     </dependencies>

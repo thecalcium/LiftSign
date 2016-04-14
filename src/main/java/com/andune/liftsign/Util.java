@@ -79,5 +79,6 @@ public class Util {
     public static final String MSG_NO_PERM_CREATE_LIFT_SIGN = "no_permission_create_lift_sign";
     public static final String MSG_UP_ONE_FLOOR = "up_one_floor";
     public static final String MSG_DOWN_ONE_FLOOR = "down_one_floor";
+    public static final String MSG_SIGN_CREATED = "sign_created";
 
 }

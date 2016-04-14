@@ -73,6 +73,8 @@ public class BlockListener implements Listener {
                 if (!perm.canCreateNormalLift(e.getPlayer())) {
                     util.getMessageUtil().sendLocalizedMessage(e.getPlayer(), Util.MSG_NO_PERM_CREATE_LIFT_SIGN);
                     e.setCancelled(true);
+                } else {
+                    util.getMessageUtil().sendLocalizedMessage(e.getPlayer(), Util.MSG_SIGN_CREATED);
                 }
             }
 
